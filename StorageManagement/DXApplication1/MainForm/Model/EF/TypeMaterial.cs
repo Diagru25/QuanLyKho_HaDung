@@ -16,6 +16,5 @@ namespace MainForm.Model.EF
 
         public long? SupplierID { get; set; }
 
-        public long? StorageID { get; set; }
     }
 }

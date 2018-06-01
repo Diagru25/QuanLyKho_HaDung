@@ -47,8 +47,10 @@
             // 
             this.metroTextBox2.Location = new System.Drawing.Point(140, 181);
             this.metroTextBox2.Name = "metroTextBox2";
+            this.metroTextBox2.PasswordChar = '●';
             this.metroTextBox2.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox2.TabIndex = 1;
+            this.metroTextBox2.UseSystemPasswordChar = true;
             // 
             // metroLabel1
             // 
@@ -75,6 +77,7 @@
             this.metroButton1.Size = new System.Drawing.Size(75, 23);
             this.metroButton1.TabIndex = 4;
             this.metroButton1.Text = "Đăng nhập";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 

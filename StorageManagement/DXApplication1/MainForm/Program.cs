@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 
-namespace QuanLyKho
+namespace MainForm
 {
     static class Program
     {
@@ -20,7 +20,7 @@ namespace QuanLyKho
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new MainForm());
+            Application.Run(new Login());
         }
     }
 }
