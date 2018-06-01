@@ -107,3 +107,6 @@ D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\Ma
 D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.Kho.ChiTietNhapKho.resources
 D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.Kho.LapPhieuNhap.resources
 D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.Kho.SoPhieuXuat.resources
+D:\Tai lieu\Project\QuanLyKho_HaDung\StorageManagement\DXApplication1\MainForm\bin\Debug\MainForm.exe.config
+D:\Tai lieu\Project\QuanLyKho_HaDung\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.exe
+D:\Tai lieu\Project\QuanLyKho_HaDung\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.pdb

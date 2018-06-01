@@ -66,6 +66,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -166,6 +168,24 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\EF\Account.cs" />
+    <Compile Include="Model\EF\Customer.cs" />
+    <Compile Include="Model\EF\DeliveryNote.cs" />
+    <Compile Include="Model\EF\DeliveryNoteDetail.cs" />
+    <Compile Include="Model\EF\Employee.cs" />
+    <Compile Include="Model\EF\Material.cs" />
+    <Compile Include="Model\EF\Permission.cs" />
+    <Compile Include="Model\EF\Product.cs" />
+    <Compile Include="Model\EF\QLKDbContext.cs" />
+    <Compile Include="Model\EF\ReceiptNote.cs" />
+    <Compile Include="Model\EF\ReceiptNoteDetail.cs" />
+    <Compile Include="Model\EF\Request.cs" />
+    <Compile Include="Model\EF\RequestDetail.cs" />
+    <Compile Include="Model\EF\Storage.cs" />
+    <Compile Include="Model\EF\Storage_Material.cs" />
+    <Compile Include="Model\EF\Supplier.cs" />
+    <Compile Include="Model\EF\TypeMaterial.cs" />
+    <Compile Include="Model\EF\TypeProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DanhMuc\ThanhPham.resx">
@@ -238,7 +258,9 @@
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Model\DAO\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
