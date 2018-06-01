@@ -13,9 +13,20 @@ namespace MainForm.Kho
 {
     public partial class YeuCauXuat : DevExpress.XtraEditors.XtraUserControl
     {
+        private static YeuCauXuat _instance;
+
         public YeuCauXuat()
         {
             InitializeComponent();
+        }
+
+        public static YeuCauXuat Instance
+        {
+            get
+            {
+                if (_instance == null) _instance = new YeuCauXuat();
+                return _instance;
+            }
         }
     }
 }

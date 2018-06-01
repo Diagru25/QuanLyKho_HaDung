@@ -22,8 +22,6 @@ namespace MainForm.Model.EF
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ReceiptNote> ReceiptNotes { get; set; }
         public virtual DbSet<ReceiptNoteDetail> ReceiptNoteDetails { get; set; }
-        public virtual DbSet<Request> Requests { get; set; }
-        public virtual DbSet<RequestDetail> RequestDetails { get; set; }
         public virtual DbSet<Storage> Storages { get; set; }
         public virtual DbSet<Storage_Material> Storage_Material { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }

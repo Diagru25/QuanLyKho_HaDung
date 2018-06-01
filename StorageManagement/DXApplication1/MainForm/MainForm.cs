@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MainForm.Model.EF;
+using MainForm.Kho;
 
 namespace MainForm
 {
@@ -24,6 +25,11 @@ namespace MainForm
                 ctrl.Dock = DockStyle.Fill;
             }
             ctrl.BringToFront();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadUserControl(YeuCauXuat.Instance);
         }
     }
 }
