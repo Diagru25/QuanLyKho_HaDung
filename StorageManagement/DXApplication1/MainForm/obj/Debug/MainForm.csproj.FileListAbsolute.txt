@@ -1,0 +1,3 @@
+D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\bin\Debug\MainForm.exe.config
+D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.exe
+D:\Tai lieu\Project\QLKho\StorageManagement\DXApplication1\MainForm\obj\Debug\MainForm.pdb
