@@ -42,6 +42,7 @@
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox1.TabIndex = 0;
+            this.metroTextBox1.Text = "diagru";
             // 
             // metroTextBox2
             // 
@@ -50,6 +51,7 @@
             this.metroTextBox2.PasswordChar = '●';
             this.metroTextBox2.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox2.TabIndex = 1;
+            this.metroTextBox2.Text = "1";
             this.metroTextBox2.UseSystemPasswordChar = true;
             // 
             // metroLabel1
@@ -86,6 +88,7 @@
             this.metroButton2.Size = new System.Drawing.Size(75, 23);
             this.metroButton2.TabIndex = 5;
             this.metroButton2.Text = "Thoát";
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // Login
             // 
