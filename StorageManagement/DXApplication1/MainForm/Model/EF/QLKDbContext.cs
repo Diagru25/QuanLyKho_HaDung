@@ -57,6 +57,10 @@ namespace MainForm.Model.EF
             modelBuilder.Entity<ReceiptNoteDetail>()
                 .Property(e => e.Price)
                 .HasPrecision(18, 0);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99a5e25fae08db9c5d494148fcb308322216744e
             modelBuilder.Entity<Supplier>()
                 .Property(e => e.Phone)
                 .IsUnicode(false);

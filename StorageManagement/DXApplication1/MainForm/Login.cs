@@ -25,10 +25,19 @@ namespace MainForm
             if (res != null)
             {
                 MessageBox.Show("Đăng nhập thành công", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MainForm mf = new MainForm(res);
+                MainForm mf = new MainForm(res, this);
                 this.Hide();
                 mf.Show();
             }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại, sai thông tin hoặc tài khoản bị khóa !!");
+            }
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

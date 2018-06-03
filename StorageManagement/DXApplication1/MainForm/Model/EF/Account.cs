@@ -24,7 +24,7 @@ namespace MainForm.Model.EF
         public DateTime? CreateDate { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? UpdateData { get; set; }
+        public DateTime? UpdateDate { get; set; }
 
         public long? PermissionID { get; set; }
     }

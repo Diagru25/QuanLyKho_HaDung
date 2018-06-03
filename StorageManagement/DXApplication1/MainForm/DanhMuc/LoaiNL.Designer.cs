@@ -29,67 +29,70 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dgr_LNN = new DevExpress.XtraGrid.GridControl();
+            this.grv_LNN = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.cbo_NCC = new System.Windows.Forms.ComboBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txbTenLNL = new DevExpress.XtraEditors.TextEdit();
+            this.txbMaLNL = new DevExpress.XtraEditors.TextEdit();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgr_LNN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv_LNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTenLNL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbMaLNL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.gridControl1);
+            this.panelControl1.Controls.Add(this.dgr_LNN);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(414, 504);
             this.panelControl1.TabIndex = 0;
             // 
-            // gridControl1
+            // dgr_LNN
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 2);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(410, 500);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.dgr_LNN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgr_LNN.Location = new System.Drawing.Point(2, 2);
+            this.dgr_LNN.MainView = this.grv_LNN;
+            this.dgr_LNN.Name = "dgr_LNN";
+            this.dgr_LNN.Size = new System.Drawing.Size(410, 500);
+            this.dgr_LNN.TabIndex = 0;
+            this.dgr_LNN.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grv_LNN});
             // 
-            // gridView1
+            // grv_LNN
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.grv_LNN.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default;
+            this.grv_LNN.GridControl = this.dgr_LNN;
+            this.grv_LNN.Name = "grv_LNN";
+            this.grv_LNN.OptionsBehavior.ReadOnly = true;
+            this.grv_LNN.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default;
+            this.grv_LNN.OptionsFind.AlwaysVisible = true;
+            this.grv_LNN.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Mã Nhà CC";
+            this.gridColumn1.Caption = "Mã loại NL";
+            this.gridColumn1.FieldName = "ID";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -97,7 +100,8 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Tên";
+            this.gridColumn2.Caption = "Tên loại nguyên liệu";
+            this.gridColumn2.FieldName = "Name";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -105,18 +109,26 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.cbo_NCC);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.label5);
             this.panelControl2.Controls.Add(this.label2);
             this.panelControl2.Controls.Add(this.label1);
-            this.panelControl2.Controls.Add(this.textEdit6);
-            this.panelControl2.Controls.Add(this.textEdit2);
-            this.panelControl2.Controls.Add(this.textEdit1);
+            this.panelControl2.Controls.Add(this.txbTenLNL);
+            this.panelControl2.Controls.Add(this.txbMaLNL);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(414, 0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(589, 417);
             this.panelControl2.TabIndex = 1;
+            // 
+            // cbo_NCC
+            // 
+            this.cbo_NCC.FormattingEnabled = true;
+            this.cbo_NCC.Location = new System.Drawing.Point(276, 233);
+            this.cbo_NCC.Name = "cbo_NCC";
+            this.cbo_NCC.Size = new System.Drawing.Size(160, 21);
+            this.cbo_NCC.TabIndex = 36;
             // 
             // labelControl1
             // 
@@ -157,64 +169,62 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Mã ";
             // 
-            // textEdit6
+            // txbTenLNL
             // 
-            this.textEdit6.Location = new System.Drawing.Point(276, 231);
-            this.textEdit6.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(160, 20);
-            this.textEdit6.TabIndex = 22;
+            this.txbTenLNL.Location = new System.Drawing.Point(276, 186);
+            this.txbTenLNL.Margin = new System.Windows.Forms.Padding(4);
+            this.txbTenLNL.Name = "txbTenLNL";
+            this.txbTenLNL.Size = new System.Drawing.Size(160, 20);
+            this.txbTenLNL.TabIndex = 20;
             // 
-            // textEdit2
+            // txbMaLNL
             // 
-            this.textEdit2.Location = new System.Drawing.Point(276, 186);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(160, 20);
-            this.textEdit2.TabIndex = 20;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(276, 144);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(160, 20);
-            this.textEdit1.TabIndex = 19;
+            this.txbMaLNL.Location = new System.Drawing.Point(276, 144);
+            this.txbMaLNL.Margin = new System.Windows.Forms.Padding(4);
+            this.txbMaLNL.Name = "txbMaLNL";
+            this.txbMaLNL.Size = new System.Drawing.Size(160, 20);
+            this.txbMaLNL.TabIndex = 19;
             // 
             // panelControl3
             // 
-            this.panelControl3.Controls.Add(this.metroButton4);
-            this.panelControl3.Controls.Add(this.metroButton3);
-            this.panelControl3.Controls.Add(this.metroButton2);
+            this.panelControl3.Controls.Add(this.btnXoa);
+            this.panelControl3.Controls.Add(this.btnSua);
+            this.panelControl3.Controls.Add(this.btnThem);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(414, 417);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(589, 87);
             this.panelControl3.TabIndex = 2;
             // 
-            // metroButton4
+            // btnXoa
             // 
-            this.metroButton4.Location = new System.Drawing.Point(52, 32);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(95, 23);
-            this.metroButton4.TabIndex = 6;
-            this.metroButton4.Text = "Thêm";
+            this.btnXoa.Image = global::MainForm.Properties.Resources.delete_32x32;
+            this.btnXoa.Location = new System.Drawing.Point(410, 20);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(120, 40);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // metroButton3
+            // btnSua
             // 
-            this.metroButton3.Location = new System.Drawing.Point(435, 31);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(101, 23);
-            this.metroButton3.TabIndex = 5;
-            this.metroButton3.Text = "Xóa";
+            this.btnSua.Image = global::MainForm.Properties.Resources.edit_32x32;
+            this.btnSua.Location = new System.Drawing.Point(230, 20);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(120, 40);
+            this.btnSua.TabIndex = 4;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // metroButton2
+            // btnThem
             // 
-            this.metroButton2.Location = new System.Drawing.Point(241, 31);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(104, 23);
-            this.metroButton2.TabIndex = 4;
-            this.metroButton2.Text = "Sửa";
+            this.btnThem.Image = global::MainForm.Properties.Resources.add_32x32;
+            this.btnThem.Location = new System.Drawing.Point(48, 20);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(120, 40);
+            this.btnThem.TabIndex = 3;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // LoaiNL
             // 
@@ -227,14 +237,13 @@
             this.Size = new System.Drawing.Size(1003, 504);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgr_LNN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv_LNN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTenLNL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbMaLNL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -246,19 +255,19 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl dgr_LNN;
+        private DevExpress.XtraGrid.Views.Grid.GridView grv_LNN;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private DevExpress.XtraEditors.TextEdit txbTenLNL;
+        private DevExpress.XtraEditors.TextEdit txbMaLNL;
+        private System.Windows.Forms.ComboBox cbo_NCC;
+        private DevExpress.XtraEditors.SimpleButton btnXoa;
+        private DevExpress.XtraEditors.SimpleButton btnSua;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
     }
 }

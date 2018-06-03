@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainForm.Model.EF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace MainForm.Model.DAO
         {
             db = new QLKDbContext();
         }
+<<<<<<< HEAD
         #region HG
         public long Insert(DeliveryNote item)
         {
@@ -127,6 +129,10 @@ namespace MainForm.Model.DAO
             db.DeliveryNotes.Remove(dbEntry);
             db.SaveChanges();
         }
+=======
+
+        #region Diagru
+>>>>>>> 99a5e25fae08db9c5d494148fcb308322216744e
         #endregion
     }
 }

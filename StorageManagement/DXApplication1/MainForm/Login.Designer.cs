@@ -42,7 +42,11 @@
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox1.TabIndex = 0;
+<<<<<<< HEAD
             this.metroTextBox1.Text = "admin";
+=======
+            this.metroTextBox1.Text = "diagru";
+>>>>>>> 99a5e25fae08db9c5d494148fcb308322216744e
             // 
             // metroTextBox2
             // 
@@ -88,6 +92,7 @@
             this.metroButton2.Size = new System.Drawing.Size(75, 23);
             this.metroButton2.TabIndex = 5;
             this.metroButton2.Text = "Thoát";
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // Login
             // 
