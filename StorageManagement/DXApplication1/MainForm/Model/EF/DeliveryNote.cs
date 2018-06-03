@@ -19,5 +19,7 @@ namespace MainForm.Model.EF
         public DateTime? DeliveryDate { get; set; }
 
         public long? CustomerID { get; set; }
+        public int? Status { get; set; }
+        public Decimal? Amount { get; set; }
     }
 }

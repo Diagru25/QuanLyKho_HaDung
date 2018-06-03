@@ -13,12 +13,24 @@ namespace MainForm
 {
     public partial class MainForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        private static long? _userID;
+
+        public static long? UserID
+        {
+            get
+            {
+                return _userID;
+            }
+        }
+
         public MainForm(Account acc)
         {
             InitializeComponent();
+            _userID = acc.EmployeeID;
         }
         void LoadUserControl(Control ctrl)
         {
+            if (panelmain.Controls.Count != 0) panelmain.Controls.Clear();
             if (!panelmain.Controls.Contains(ctrl))
             {
                 panelmain.Controls.Add(ctrl);
@@ -30,6 +42,21 @@ namespace MainForm
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             LoadUserControl(YeuCauXuat.Instance);
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadUserControl(YeuCauNhap.Instance);
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadUserControl(SoPhieuXuat.Instance);
+        }
+
+        private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadUserControl(SoPhieuNhap.Instance);
         }
     }
 }

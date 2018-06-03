@@ -16,6 +16,7 @@ namespace MainForm.Model.EF
         public int? Quantity { get; set; }
 
         public decimal? Price { get; set; }
+        public long? MaterialID { get; set; }
 
         [Column(TypeName = "ntext")]
         public string Describe { get; set; }

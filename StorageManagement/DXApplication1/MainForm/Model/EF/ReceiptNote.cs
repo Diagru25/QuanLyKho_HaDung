@@ -11,11 +11,14 @@ namespace MainForm.Model.EF
     {
         public long ID { get; set; }
 
-        public long? SupplierID { get; set; }
-
         public long? StorageID { get; set; }
+
+        public long ? EmployeeID { get; set; }
+
+        public int? Status { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? ReceiptDate { get; set; }
+        public Decimal? Amount { get; set; }
     }
 }

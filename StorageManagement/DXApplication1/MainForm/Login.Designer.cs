@@ -42,6 +42,7 @@
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox1.TabIndex = 0;
+            this.metroTextBox1.Text = "admin";
             // 
             // metroTextBox2
             // 
@@ -50,6 +51,7 @@
             this.metroTextBox2.PasswordChar = '●';
             this.metroTextBox2.Size = new System.Drawing.Size(195, 23);
             this.metroTextBox2.TabIndex = 1;
+            this.metroTextBox2.Text = "1";
             this.metroTextBox2.UseSystemPasswordChar = true;
             // 
             // metroLabel1
